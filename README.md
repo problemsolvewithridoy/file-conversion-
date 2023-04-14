@@ -31,7 +31,6 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 # Instantiates a client
 client = speech_v1.SpeechClient()
 
-
 # Set up Google Cloud Speech-to-Text API
 def transcribe_gcs(gcs_uri):
     audio = speech_v1.types.RecognitionAudio(uri=gcs_uri)
@@ -76,8 +75,6 @@ video_path = "test1.mp4"
 transcribed_text = transcribe_video_to_text(video_path)
 print(transcribed_text)
 ```
-
-
 
 ## License
 This project is licensed under the MIT License.
